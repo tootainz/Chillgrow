@@ -21,17 +21,23 @@ p, li {
 
 	#site_header_image {
 	display: none;
-	height: 250px;
-	right: 50px;
-	top: 25px;
-	z-index: -1;
 	}
 }
 
 @media only screen and (max-width: 600px) {
 
-	h1 {
+	#site_header {
+	padding: 20px;
+	}
+
+	#site_header h1 {
+	text-align: center;
 	font-size: 50px;
+	margin-bottom: 10px;
+	}
+
+	#site_header p {
+		display: none;
 	}
 }
 
