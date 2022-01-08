@@ -17,30 +17,6 @@ p, li {
 	font-size: 18px;
 }
 
-@media only screen and (max-width: 750px) {
-
-	#site_header_image {
-	display: none;
-	}
-}
-
-@media only screen and (max-width: 600px) {
-
-	#site_header {
-	padding: 20px;
-	}
-
-	#site_header h1 {
-	text-align: center;
-	font-size: 50px;
-	margin-bottom: 10px;
-	}
-
-	#site_header p {
-		display: none;
-	}
-}
-
 #site {
 }
 
@@ -106,6 +82,10 @@ p, li {
 	text-decoration: none;
 }
 
+#menu_button, .close_button{
+	display: none;
+}
+
 #blog {
 	display: flex;
 	flex-direction: row;
@@ -165,4 +145,123 @@ p, li {
 	padding: 25px;
 	background: #383838;
 	color: black;
+}
+
+@media only screen and (max-width: 850px) {
+
+	#site_header_image {
+	display: none;
+	}
+}
+
+@media only screen and (max-width: 650px) {
+
+	#site_header {
+	padding-top: 45px;
+	padding-bottom: 20px;
+	}
+
+	#site_header h1 {
+	text-align: left;
+	font-size: 40px;
+	}
+
+	#site_header p {
+	display: none;
+	}
+
+	.close_button {
+	display: block;
+	}
+
+	#menu_button {
+	display: block;
+	position: absolute;
+	right: 55px;
+	top: 51px;
+	width: 32px;
+	}
+
+	.close_button {
+	display: block;
+	position: absolute;
+	right: 55px;
+	top: 51px;
+	font-size: 32px;
+	}
+
+	#menu {
+	display: block;
+	height: 100%;
+	width: 0%;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background-color: white;
+	overflow: hidden;
+	transition: 0.5s;
+	padding-top: 57px;
+	padding-bottom: 0px;
+	padding-right: 0px;
+	padding-left: 0px;
+	}
+
+	#menu ul {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 45px;
+	}
+
+	#menu ul li {
+	margin-right: 0px;
+	font-size: 25px;
+	}
+}
+
+}
+
+@media only screen and (max-width: 450px) {
+
+	#site_header {
+	padding-top: 45px;
+	padding-bottom: 20px;
+	}
+
+	#site_header h1 {
+	text-align: left;
+	font-size: 35px;
+	}
+
+	#menu_button {
+	display: block;
+	position: absolute;
+	right: 40px;
+	top: 51px;
+	width: 32px;
+	}
+
+}
+
+@media only screen and (max-width: 350px) {
+
+	#site_header {
+	padding-top: 50px;
+	padding-bottom: 20px;
+	}
+
+	#site_header h1 {
+	text-align: left;
+	font-size: 27px;
+	}
+
+	#menu_button {
+	display: block;
+	position: absolute;
+	right: 40px;
+	top: 51px;
+	width: 28px;
+	}
+
 }

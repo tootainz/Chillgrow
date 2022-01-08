@@ -23,8 +23,11 @@
 		</div>
 		</a>
 
+		<img id="menu_button" src="img/index/menu_logo.png" onclick="openNav()">
+
 		<div id="menu">
 			<ul>
+				<a href="javascript:void(0)" class="close_button" onclick="closeNav()">&times;</a>
 				<li><a href="about/about.html">About</a></li>
 				<li><a href="index.html">Blog</a></li>
 				<li><a href="categories/categories.html">Categories</a></li>
@@ -80,4 +83,19 @@
 
 	</div>
 </body>
+
+<script type="text/javascript">
+
+function openNav() {
+  document.getElementById("menu").style.display = "block";
+  document.getElementById("menu").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("menu").style.display = "block";
+    document.getElementById("menu").style.width = "0%";
+}
+
+</script>
+
 </html>
